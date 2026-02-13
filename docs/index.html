@@ -133,6 +133,27 @@
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .header-logo {
+            height: 120px;
+            width: auto;
+            filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.4));
+        }
+
+        @media (max-width: 640px) {
+            header h1 {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .header-logo {
+                height: 100px;
+            }
         }
 
         .university-info {
@@ -625,7 +646,7 @@
             <span class="hero-badge">Ano Letivo 2026</span>
             <div class="university-info">Centro Universitário de Franca - Uni-FACEF</div>
             <div class="courses-info">Ciência da Computação / Sistemas de Informação / Engenharia de Software</div>
-            <h1>Estrutura de Dados I e II</h1>
+            <h1><img src="img/JS.webp" alt="JS Logo" class="header-logo">Estrutura de Dados I e II</h1>
             <p class="prof-info">
                 <span class="prof-name">Prof. Me. Alexandre Gomes</span><br>
                 <a href="https://github.com/XandyGomes" target="_blank" class="github-link">
@@ -637,13 +658,20 @@
 
     <nav>
         <div class="nav-container">
-            <a href="#objetivo">Objetivo</a>
-            <a href="#ementa">Ementa</a>
-            <a href="#materiais-1">1º Semestre</a>
-            <a href="#materiais-2">2º Semestre</a>
-            <a href="#avaliacao">Avaliação</a>
-            <a href="#teoria">Visualização</a>
-            <a href="#bibliografia">Bibliografia</a>
+            <a href="#objetivo"><i data-lucide="target"
+                    style="width:16px; display:inline; vertical-align:middle; margin-right:4px;"></i> Objetivo</a>
+            <a href="#ementa"><i data-lucide="book-open"
+                    style="width:16px; display:inline; vertical-align:middle; margin-right:4px;"></i> Ementa</a>
+            <a href="#materiais-1"><i data-lucide="layers"
+                    style="width:16px; display:inline; vertical-align:middle; margin-right:4px;"></i> 1º Semestre</a>
+            <a href="#materiais-2"><i data-lucide="git-branch"
+                    style="width:16px; display:inline; vertical-align:middle; margin-right:4px;"></i> 2º Semestre</a>
+            <a href="#avaliacao"><i data-lucide="clipboard-list"
+                    style="width:16px; display:inline; vertical-align:middle; margin-right:4px;"></i> Avaliação</a>
+            <a href="#teoria"><i data-lucide="eye"
+                    style="width:16px; display:inline; vertical-align:middle; margin-right:4px;"></i> Visualização</a>
+            <a href="#bibliografia"><i data-lucide="library"
+                    style="width:16px; display:inline; vertical-align:middle; margin-right:4px;"></i> Bibliografia</a>
         </div>
     </nav>
 
